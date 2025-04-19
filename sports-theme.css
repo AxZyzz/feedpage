@@ -1,0 +1,253 @@
+/* ZTrike Sports Theme - Additional Styling */
+
+/* Custom Sports Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes scoreFlash {
+    0% { background-color: rgba(230, 57, 70, 0); }
+    50% { background-color: rgba(230, 57, 70, 0.2); }
+    100% { background-color: rgba(230, 57, 70, 0); }
+}
+
+/* Sports-themed UI Elements */
+.sports-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.sports-stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sports-stat:hover {
+    background-color: rgba(230, 57, 70, 0.1);
+    transform: translateX(5px);
+}
+
+.sports-stat-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    color: #1d3557;
+}
+
+.sports-stat-value {
+    font-weight: bold;
+    color: #e63946;
+    margin-left: auto;
+}
+
+/* Team Colors */
+.team-lakers {
+    color: #552583;
+    border-color: #552583;
+}
+
+.team-celtics {
+    color: #007A33;
+    border-color: #007A33;
+}
+
+.team-warriors {
+    color: #1D428A;
+    border-color: #1D428A;
+}
+
+.team-heat {
+    color: #98002E;
+    border-color: #98002E;
+}
+
+/* Sports Card Styles */
+.sports-card {
+    border-left: 4px solid #e63946;
+    transition: all 0.3s ease;
+}
+
+.sports-card:hover {
+    border-left-width: 8px;
+}
+
+/* Live Indicator */
+.live-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #e63946;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: pulse 1s infinite;
+}
+
+/* Match Card */
+.match-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.match-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.vs-badge {
+    padding: 3px 8px;
+    background-color: #1d3557;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Poll Styling */
+.poll-option {
+    position: relative;
+    overflow: hidden;
+}
+
+.poll-option-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(230, 57, 70, 0.1);
+    z-index: 0;
+    transition: width 0.5s ease;
+}
+
+.poll-option-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Highlight Reel */
+.highlight-reel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.highlight-reel img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.highlight-reel:hover img {
+    transform: scale(1.05);
+}
+
+.highlight-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(230, 57, 70, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #e63946;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Athlete Stats */
+.athlete-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.stat-box {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+/* Apply sports theme to existing elements */
+.card.sports-theme {
+    border-top: 3px solid #e63946;
+}
+
+.post-btn.sports-theme:hover {
+    background-color: rgba(230, 57, 70, 0.1);
+    color: #e63946;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .athlete-stats {
+        grid-template-columns: 1fr;
+    }
+}

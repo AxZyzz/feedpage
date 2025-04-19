@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZTrike - Sports Social Network</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sports-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Z<span>Trike</span></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#"><i class="fas fa-users"></i><span>Teams</span></a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i><span>Leagues</span></a></li>
+                    <li><a href="#"><i class="fas fa-comment-dots"></i><span>Messaging</span></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i><span>Notifications</span></a></li>
+                </ul>
+            </nav>
+            <div class="profile-menu">
+                <div class="profile-pic">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile Picture">
+                </div>
+                <span>Me <i class="fas fa-caret-down"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container content-container">
+            <!-- Left Sidebar -->
+            <aside class="sidebar left-sidebar">
+                <div class="profile-card card">
+                    <div class="profile-background"></div>
+                    <div class="profile-info">
+                        <div class="profile-image">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile Picture">
+                        </div>
+                        <h2>John Doe</h2>
+                        <p class="profile-headline">Senior Software Engineer at Tech Company</p>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <p>Who viewed your profile</p>
+                            <span>128</span>
+                        </div>
+                        <div class="stat">
+                            <p>Views of your post</p>
+                            <span>843</span>
+                        </div>
+                    </div>
+                    <div class="premium-badge">
+                        <i class="fas fa-star"></i>
+                        <p>Access exclusive tools & insights</p>
+                    </div>
+                    <div class="my-items">
+                        <i class="fas fa-bookmark"></i>
+                        <p>My Items</p>
+                    </div>
+                </div>
+                <div class="recent-card card">
+                    <h3>Recent</h3>
+                    <ul class="recent-list">
+                        <li><a href="#"><i class="fas fa-basketball-ball"></i> Basketball Fans</a></li>
+                        <li><a href="#"><i class="fas fa-hashtag"></i> nba</a></li>
+                        <li><a href="#"><i class="fas fa-hashtag"></i> football</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Soccer Enthusiasts</a></li>
+                    </ul>
+                    <div class="groups">
+                        <h4>Teams</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-users"></i> Lakers Nation</a></li>
+                            <li><a href="#"><i class="fas fa-users"></i> Real Madrid Fans</a></li>
+                        </ul>
+                    </div>
+                    <div class="events">
+                        <h4>Events</h4>
+                        <a href="#">See all</a>
+                    </div>
+                    <div class="followed-hashtags">
+                        <h4>Followed Hashtags</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-hashtag"></i> nba</a></li>
+                            <li><a href="#"><i class="fas fa-hashtag"></i> worldcup</a></li>
+                            <li><a href="#"><i class="fas fa-hashtag"></i> olympics</a></li>
+                        </ul>
+                    </div>
+                    <div class="discover-more">
+                        <a href="#">Discover more</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Feed Content -->
+            <section class="feed">
+                <div class="post-form card">
+                    <div class="form-header">
+                        <div class="user-pic">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="post-input">
+                            <input type="text" placeholder="Start a post">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-image" style="color: #70b5f9;"></i>
+                            <span>Photo</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-video" style="color: #7fc15e;"></i>
+                            <span>Highlight</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-chart-line" style="color: #e7a33e;"></i>
+                            <span>Stats</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-poll" style="color: #fc9295;"></i>
+                            <span>Create poll</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Feed Posts -->
+                <div class="feed-posts">
+                    <!-- Post 1 -->
+                    <div class="post card">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-pic">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Picture">
+                                </div>
+                                <div class="user-info">
+                                    <h3>Michael Jordan</h3>
+                                    <p>Basketball Coach at Chicago Bulls Academy</p>
+                                    <span class="post-time">2h • <i class="fas fa-globe-americas"></i></span>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Just finished an amazing training session with the team. The rookies are showing incredible potential this season! 🏀 #BasketballCoaching #NextGeneration</p>
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" alt="Basketball Training">
+                            </div>
+                        </div>
+                        <div class="post-stats">
+                            <div class="reactions">
+                                <span><i class="fas fa-thumbs-up"></i> 124</span>
+                                <span><i class="fas fa-comment"></i> 18 comments</span>
+                            </div>
+                        </div>
+                        <div class="post-buttons">
+                            <button class="post-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                            <button class="post-btn"><i class="far fa-comment"></i> Comment</button>
+                            <button class="post-btn"><i class="fas fa-share"></i> Share</button>
+                            <button class="post-btn"><i class="far fa-paper-plane"></i> Send</button>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="post card">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-pic">
+                                    <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="User Picture">
+                                </div>
+                                <div class="user-info">
+                                    <h3>Serena Williams</h3>
+                                    <p>Tennis Pro at Grand Slam Academy</p>
+                                    <span class="post-time">5h • <i class="fas fa-globe-americas"></i></span>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Just finished my morning training session. Working on my serve for the upcoming tournament. Who's watching this weekend? 🎾 #TennisLife #Championship #Training</p>
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0" alt="Tennis Court">
+                            </div>
+                        </div>
+                        <div class="post-stats">
+                            <div class="reactions">
+                                <span><i class="fas fa-thumbs-up"></i> 89</span>
+                                <span><i class="fas fa-comment"></i> 12 comments</span>
+                            </div>
+                        </div>
+                        <div class="post-buttons">
+                            <button class="post-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                            <button class="post-btn"><i class="far fa-comment"></i> Comment</button>
+                            <button class="post-btn"><i class="fas fa-share"></i> Share</button>
+                            <button class="post-btn"><i class="far fa-paper-plane"></i> Send</button>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="post card">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-pic">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User Picture">
+                                </div>
+                                <div class="user-info">
+                                    <h3>Cristiano Ronaldo</h3>
+                                    <p>Soccer Star at Madrid United</p>
+                                    <span class="post-time">1d • <i class="fas fa-globe-americas"></i></span>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Excited to announce our youth soccer camp next month! Looking for passionate coaches to join our team. Great opportunity to work with the next generation of soccer stars. Tag someone who might be interested! #SoccerCamp #Coaching #YouthSports</p>
+                        </div>
+                        <div class="post-stats">
+                            <div class="reactions">
+                                <span><i class="fas fa-thumbs-up"></i> 215</span>
+                                <span><i class="fas fa-comment"></i> 43 comments</span>
+                            </div>
+                        </div>
+                        <div class="post-buttons">
+                            <button class="post-btn"><i class="far fa-thumbs-up"></i> Like</button>
+                            <button class="post-btn"><i class="far fa-comment"></i> Comment</button>
+                            <button class="post-btn"><i class="fas fa-share"></i> Share</button>
+                            <button class="post-btn"><i class="far fa-paper-plane"></i> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="sidebar right-sidebar">
+                <div class="news-card card">
+                    <div class="news-header">
+                        <h3>News</h3>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <ul class="news-list">
+                        <li>
+                            <div class="news-bullet"></div>
+                            <div class="news-content">
+                                <h4>Lakers win championship in thrilling Game 7</h4>
+                                <p>3d ago • 15,243 readers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-bullet"></div>
+                            <div class="news-content">
+                                <h4>World Cup qualifiers begin next month</h4>
+                                <p>2d ago • 8,112 readers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-bullet"></div>
+                            <div class="news-content">
+                                <h4>New analytics changing how teams recruit</h4>
+                                <p>1d ago • 4,876 readers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-bullet"></div>
+                            <div class="news-content">
+                                <h4>Olympic trials showcase new talent</h4>
+                                <p>5h ago • 3,954 readers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-bullet"></div>
+                            <div class="news-content">
+                                <h4>Major trade shakes up basketball league</h4>
+                                <p>6h ago • 7,732 readers</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="show-more">Show more <i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <div class="ad-card card">
+                    <div class="ad-header">
+                        <span>Ad</span>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="ad-content">
+                        <p>Improve your game with pro training equipment</p>
+                        <div class="ad-images">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Your profile" class="ad-user">
+                            <img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4" alt="Sports Equipment" class="ad-product">
+                        </div>
+                        <p>Athletes like you trust our equipment. Upgrade your gear and take your performance to the next level.</p>
+                        <button class="ad-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="suggestions-card card">
+                    <h3>Athletes you may know</h3>
+                    <ul class="suggestions-list">
+                        <li class="suggestion-item">
+                            <div class="suggestion-pic">
+                                <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Suggestion">
+                            </div>
+                            <div class="suggestion-info">
+                                <h4>Alex Morgan</h4>
+                                <p>Professional Soccer Player at USA FC</p>
+                                <p class="mutual"><i class="fas fa-user-friends"></i> 3 mutual connections</p>
+                                <button class="connect-btn"><i class="fas fa-plus"></i> ZTrike</button>
+                            </div>
+                        </li>
+                        <li class="suggestion-item">
+                            <div class="suggestion-pic">
+                                <img src="https://randomuser.me/api/portraits/men/26.jpg" alt="Suggestion">
+                            </div>
+                            <div class="suggestion-info">
+                                <h4>LeBron James</h4>
+                                <p>Basketball Player at LA Lakers</p>
+                                <p class="mutual"><i class="fas fa-user-friends"></i> 5 mutual connections</p>
+                                <button class="connect-btn"><i class="fas fa-plus"></i> ZTrike</button>
+                            </div>
+                        </li>
+                        <li class="suggestion-item">
+                            <div class="suggestion-pic">
+                                <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="Suggestion">
+                            </div>
+                            <div class="suggestion-info">
+                                <h4>Naomi Osaka</h4>
+                                <p>Tennis Player at Grand Slam Circuit</p>
+                                <p class="mutual"><i class="fas fa-user-friends"></i> 2 mutual connections</p>
+                                <button class="connect-btn"><i class="fas fa-plus"></i> ZTrike</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="show-more">Show more <i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <footer class="footer-links">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Business Services</a></li>
+                        <li><a href="#">Get the app</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                    <div class="copyright">
+                        <img src="#" alt="Logo" class="small-logo">
+                        <span>ZTrike Sports Network © 2023</span>
+                    </div>
+                </footer>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="sports-widgets.js"></script>
+</body>
+</html>

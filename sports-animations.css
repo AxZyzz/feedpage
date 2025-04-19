@@ -1,0 +1,184 @@
+/* ZTrike Sports Animations and Visual Enhancements */
+
+/* Live Score Pulse Animation */
+@keyframes scoreFlash {
+    0% { background-color: rgba(230, 57, 70, 0.1); }
+    50% { background-color: rgba(230, 57, 70, 0.2); }
+    100% { background-color: rgba(230, 57, 70, 0.1); }
+}
+
+/* Live Indicator Pulse */
+@keyframes livePulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.live-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #e63946;
+    border-radius: 50%;
+    display: inline-block;
+    animation: livePulse 1.5s ease infinite;
+}
+
+/* Team Logo Hover Effect */
+.team-logo {
+    transition: transform 0.3s ease;
+}
+
+.team-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Sports Card Hover Enhancement */
+.sports-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sports-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Sports Badge Styling */
+.sports-badge {
+    background-color: #e63946;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Athlete Stats Animation */
+.athlete-stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.stat-box {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-3px);
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Match Card Styling */
+.match-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.match-card:hover {
+    transform: scale(1.02);
+    background-color: #e9ecef;
+}
+
+/* VS Badge Animation */
+.vs-badge {
+    background: linear-gradient(45deg, #e63946, #1d3557);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: vsGlow 2s ease infinite;
+}
+
+@keyframes vsGlow {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Highlight Reel Styling */
+.highlight-reel {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.highlight-reel img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.highlight-reel:hover img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(230, 57, 70, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.highlight-reel:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: #e63946;
+}
+
+/* Sports Stats Icons Animation */
+.sports-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+}
+
+.sports-stat-icon {
+    color: #1d3557;
+    transition: transform 0.3s ease;
+}
+
+.sports-stat:hover .sports-stat-icon {
+    transform: rotate(360deg);
+}
+
+.sports-stat-value {
+    font-weight: bold;
+    color: #e63946;
+    margin-left: auto;
+}
